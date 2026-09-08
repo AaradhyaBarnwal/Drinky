@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    justify-content: space-evenly;
+    background-color: rgb(144, 144, 200);
+    font-family: 'Nunito Sans';
+}
+
+.base{
+    height: 250px;
+    width: 200px;
+    border: 3px rgb(76, 76, 160) solid;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(194, 160, 211);
+    margin: 20px;
+}
+
+.base:hover{
+    background-color: rgb(3, 3, 44);
+    color: plum;
+}
+
+.xtra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bases{
+    display: flex;
+    flex-direction: row;
+}
+
+.xtra button{
+    margin: 20px;
+    background-color: rgb(3, 3, 36);
+    color: rgb(231, 231, 161);
+    font-family: sans-serif;
+    border: 5px blueviolet dashed;
+    width: 120px;
+    height: 40px;
+}
+
+.price{
+    background-color: rgb(2, 2, 48);
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4{
+    color: rgb(199, 92, 155);
+}
+

@@ -1,0 +1,83 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgb(106, 226, 158);
+    font-family: "Comic Relief";
+}
+
+.layer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top{
+    border: 1px rgb(201, 178, 162) solid;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 75px;
+    align-items: center;
+    justify-content: center;
+    background-color: #98FB98;
+}
+
+.x{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.x div{
+    align-self: center;
+    justify-self: center;
+    background-color: lightpink;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.btn{
+    height: 40px;
+    width: 90px;
+    border: dotted darkolivegreen 1px;
+    background-color: rgb(2, 21, 2);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+.in{
+    background-color: rgb(203, 72, 72);
+    border: lightcoral 2px dashed;
+    height: 250px;
+    width: 200px;
+    align-self: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+p{
+    align-self: center;
+    justify-self: center;
+}
+
+h4{
+    align-self: center;
+    justify-self: center;
+}
+
+img{
+    align-self: center;
+    justify-self: center;
+}
