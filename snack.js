@@ -57,8 +57,10 @@ snacksi.forEach(snack => {
     snack.addEventListener('click',function(){
         const p = this.querySelector('p').innerText;
         const n = this.querySelector('h4').innerText;
+        const s = this.querySelector('span').innerText;
         
 
         localStorage.setItem(`currentSnack`, ` ${n} - ${p}`)
+        localStorage.setItem(`price2`, `${s}`)
     })
 });

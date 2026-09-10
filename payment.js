@@ -31,8 +31,13 @@ function pricesAll() {
 }
 
 function timer() {
+   const priceSnack = localStorage.getItem('price2');
    const priceTop = localStorage.getItem('prices');
-   console.log(priceTop);
+   const priceDrink = localStorage.getItem('price3');
+   const num = Number(priceDrink);
+   const num2 = Number(priceTop);
+   const num3 = Number(priceSnack);
+   
 
 }
 

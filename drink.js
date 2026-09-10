@@ -39,8 +39,10 @@ bases.forEach(base => {
     base.addEventListener('click',function(){
         const p = this.querySelector('p').innerText;
         const n = this.querySelector('h4').innerText;
+        const s = this.querySelector('span').innerText;
         
 
+        localStorage.setItem(`price3`,`${s}`)
         localStorage.setItem(`currentDrink`, ` ${n} - ${p}`)
     })
 });

@@ -39,7 +39,8 @@ toAll.forEach(top => {
     top.addEventListener('click',function(){
         const p = this.querySelector('p').innerText;
         const n = this.querySelector('h4').innerText;
-        localStorage.setItem(`prices` , `${p}`);
+        const s = this.querySelector('span').innerText;
+        localStorage.setItem(`prices` , `${s}`);
         localStorage.setItem(`currentTop`, ` ${n} - ${p}`);
     })
 });
