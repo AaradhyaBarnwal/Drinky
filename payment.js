@@ -4,7 +4,7 @@ let item1 = document.querySelector('.item1');
 let item2 = document.querySelector('.item2');
 let item3 = document.querySelector('.item3');
 let snackPrice = document.querySelector('.sna');
-let btn = document.getElementsByTagName(button);
+let btn = document.querySelector('.button');
 
 
 function pricesAll() {
@@ -37,4 +37,4 @@ function timer() {
 }
 
 pricesAll();
-btn.addEventLi
+btn.addEventListener('click',timer)
