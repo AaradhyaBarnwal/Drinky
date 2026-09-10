@@ -3,6 +3,8 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 255, 105);
+    font-family: "Sour Gummy";
+
 }
 
 .layer{
@@ -31,6 +33,10 @@ button{
     align-self: baseline;
     justify-self: center;
     margin: 25px;
+    border-radius: 5px;
+    background-color: rgb(236, 212, 108);
+    color: rgb(24, 2, 44);
+    border: none;
 }
 
 .sna{

@@ -1,4 +1,6 @@
-let base = document.querySelector('.btn');
+let bas = document.querySelector('.btn');
+
+let bases = document.querySelectorAll('.base');
 
 let drink1 = document.querySelector('#drink1');
 let drink2 = document.querySelector('#drink2');
@@ -8,7 +10,7 @@ let drink5 = document.querySelector('#drink5');
 
 let price = document.querySelector('.price');
 
-base.addEventListener('click',()=>{
+bas.addEventListener('click',()=>{
     window.location.href = 'top.html';
     console.log('f');
 })
@@ -32,3 +34,13 @@ drink4.addEventListener('click',()=>{
 drink5.addEventListener('click',()=>{
     price.innerHTML = `<p>4 sun</p>`
 })
+
+bases.forEach(base => {
+    base.addEventListener('click',function(){
+        const p = this.querySelector('p').innerText;
+        const n = this.querySelector('h4').innerText;
+        
+
+        localStorage.setItem(`currentDrink`, ` ${n} - ${p}`)
+    })
+});
