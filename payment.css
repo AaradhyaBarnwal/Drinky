@@ -20,12 +20,6 @@ body{
     color: rgb(55, 36, 5);
 }
 
-/* .card:hover{
-    box-shadow: cyan 15px 15px 15px;
-    background-color: beige;
-    color: black;
-    text-shadow: cyan 1px 1px 1px;
-} */
 
 .in{
     justify-content: space-evenly;
@@ -42,4 +36,10 @@ button{
     color: rgb(146, 101, 33);
     background-color: rgb(6, 38, 13);
     border: none;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

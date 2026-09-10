@@ -5,6 +5,10 @@ let item2 = document.querySelector('.item2');
 let item3 = document.querySelector('.item3');
 let snackPrice = document.querySelector('.sna');
 let btn = document.querySelector('.button');
+let img = document.querySelector('.img');
+let text = document.querySelector('.ready');
+let stop = document.querySelector('.stop');
+let resume = document.querySelector('.resume');
 
 
 function pricesAll() {
@@ -41,10 +45,20 @@ function timer() {
    let sum = ((num + num2 + num3)*10)*60000;
    console.log(sum);
 
-   ti
+   text.innerText = "Now you have to pay , You can pay till the order is ready";
+   stop.innerText = "Get the order now?";
+
+   setTimeout(() => {
+      img.src = "assets/box.png";
+      text.innerText = "And it's ready!!";
+   }, 3000);
    
 
 }
+
+stop.addEventListener('click',()=>{
+   clearTimeout();
+})
 
 pricesAll();
 btn.addEventListener('click',timer)
