@@ -37,6 +37,9 @@ function timer() {
    const num = Number(priceDrink);
    const num2 = Number(priceTop);
    const num3 = Number(priceSnack);
+
+   let sum = ((num + num2 + num3)*10)/60;
+   console.log(sum);
    
 
 }
