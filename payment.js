@@ -62,6 +62,8 @@ function timer() {
 stop.addEventListener('click',()=>{
    sound.play();
    clearTimeout();
+   img.src = "assets/box.png";
+   text.innerText = "And it's ready!!";
 })
 
 pricesAll();
