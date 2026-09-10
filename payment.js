@@ -34,7 +34,10 @@ function pricesAll() {
    }
 }
 
+const sound = new Audio('assets/beep.mp3');
+
 function timer() {
+   sound.play();
    const priceSnack = localStorage.getItem('price2');
    const priceTop = localStorage.getItem('prices');
    const priceDrink = localStorage.getItem('price3');
@@ -51,12 +54,13 @@ function timer() {
    setTimeout(() => {
       img.src = "assets/box.png";
       text.innerText = "And it's ready!!";
-   }, 3000);
+   }, sum);
    
-
+   
 }
 
 stop.addEventListener('click',()=>{
+   sound.play();
    clearTimeout();
 })
 

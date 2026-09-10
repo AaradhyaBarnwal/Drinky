@@ -10,24 +10,32 @@ let drink5 = document.querySelector('#drink5');
 
 let price = document.querySelector('.price');
 
+const sound = new Audio('assets/beep.mp3');
+
+
 bas.addEventListener('click',()=>{
     window.location.href = 'top.html';
+    sound.play();
     console.log('f');
 })
 
 drink1.addEventListener('click',()=>{
+    sound.play();
     price.innerHTML = `<p>1 sun</p>`
 })
 
 drink2.addEventListener('click',()=>{
+    sound.play();
     price.innerHTML = `<p>2 sun</p>`
 })
 
 drink3.addEventListener('click',()=>{
+    sound.play();
     price.innerHTML = `<p>2 sun</p>`
 })
 
 drink4.addEventListener('click',()=>{
+    sound.play();
     price.innerHTML = `<p>3 sun</p>`
 })
 

@@ -10,28 +10,36 @@ let btn = document.querySelector('.btn');
 
 let price3 = document.querySelector('.price3');
 
+
+const sound = new Audio('assets/chord_iphone.mp3');
+
 btn.addEventListener('click',()=>{
     window.location.href = 'snack.html';
     console.log('f');
 })
 
 to.addEventListener('click',()=>{
+    sound.play();
     price3.innerHTML = `<p>2 sun</p>`
 })
 
 to1.addEventListener('click',()=>{
+    sound.play();
     price3.innerHTML = `<p>2.5 sun</p>`
 })
 
 to2.addEventListener('click',()=>{
+    sound.play();
     price3.innerHTML = `<p>2 sun</p>`
 })
 
 to3.addEventListener('click',()=>{
+    sound.play();
     price3.innerHTML = `<p>5 sun</p>`
 })
 
 to4.addEventListener('click',()=>{
+    sound.play();
     price3.innerHTML = `<p>3 sun</p>`
 })
 

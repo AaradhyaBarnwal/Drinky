@@ -14,42 +14,55 @@ let snack10 = document.querySelector('#j');
 let price1 = document.querySelector('.st');
 let snacksi = document.querySelectorAll('.snack');
 
+const sound = new Audio('assets/alert_sound.mp3');
+
 btn.addEventListener('click',()=>{
     window.location.href = 'payment.html';
-    console.log('snack')
 })
 
 snack1.addEventListener('click',()=>{
     input.innerHTML = `<p>3 suns</p>`;
+    sound.play();
+
 })
 
 snack2.addEventListener('click',()=>{
     input.innerHTML = `<p>2 suns</p>`;
+    sound.play();
+
 })
 
 snack3.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>4 suns</p>`;
 })
 snack4.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>5 suns</p>`;
 })
 snack5.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>4 suns</p>`;
 })
 snack6.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>3 suns</p>`;
 })
 snack7.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>4 suns</p>`;
 })
 snack8.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>2 suns</p>`;
 })
 snack9.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>1 suns</p>`;
 })
 
 snack10.addEventListener('click',()=>{
+    sound.play();
     input.innerHTML = `<p>3 suns</p>`; 
 })
 
